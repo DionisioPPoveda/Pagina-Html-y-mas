@@ -1,0 +1,257 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+:root {
+  --fondo-color: linear-gradient(
+  90deg, black, 90%, green );
+  --color-texto: #fff;
+  --color-footer: linear-gradient(45deg,#000,#111);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: var(--fondo-color);
+    color: var(--color-texto);
+    
+}
+a{
+    text-decoration: none;
+   color: var(--color-texto);
+}
+
+
+
+
+.topheader{
+  background: #000;
+  box-shadow: 0 4px 5px #111;
+}
+
+.topnav{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+ max-width: 980px;
+ margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.logo img{
+    border-radius: 60%;
+}
+
+/*menu*/
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    padding: 0 15px;
+}
+
+.menu a{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+a{
+    transition: transform 1s;
+    transition: color .5s;
+
+}
+a:hover{
+    transform: scale(1.11);
+    color: #131;
+}
+li{
+    transition: transform .4s;
+    transition: color .5s;
+}
+li:hover{
+    transform: scale(1.1);
+    color: #131;
+}
+
+#register{
+    background: #141;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+#register:hover{
+    transform: scale(1.11);
+}
+
+
+.open-menu,
+.close-menu{
+display: none;
+}
+
+@media (max-width: 950px) {
+
+   
+.menu{
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  background-color: #111;
+  height: 100%;
+  overflow-y: auto;
+
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity 0.3s;
+}
+.menu li{
+    padding: 0;
+    transition: color .5s;
+}
+.menu a:hover{
+    color: #131;
+}
+.menu a{
+    color: #fff;
+    line-height: 60px;
+    
+}
+
+.open-menu,
+.close-menu{
+ display: block;
+ border: none;
+ background:none;
+ cursor: pointer;
+}
+.open-menu{
+    transition: transform 1.1s;
+}
+.open-menu:hover{
+    transform: scale(1.1);
+}
+
+
+.close-menu{
+  align-self: flex-end;  
+  padding: 14px 6px;
+  transition: transform 1.1s;
+}
+.close-menu:hover{
+    transform: scale(1.1);
+}
+
+
+.menu_openend{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 100;
+}
+#register{
+    background: #141;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    color: #fff;
+     
+}
+}
+
+.container-1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0;
+    align-items: center;
+}
+.container-1 img{
+    max-width: 80%;
+    box-shadow: 0 7px 7px #141;
+    border-radius: 10px;
+
+}
+.item-1{
+  position: absolute;
+  top: 12em;
+}
+h2{
+   text-align: center;
+}
+
+.container-2{
+ 
+   justify-content: center;
+   align-items: center;
+   max-width: 100%;
+   margin: 20px 0;
+}
+.item-2{
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.item-2 img{
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 7px #141;
+}
+.parrafo-1{
+    padding: 20px 30px;
+    margin: 0 5em;
+    text-align: center;
+}
+
+.footer{
+    box-shadow: 7px 4px 5px #111;
+    background: var(--color-footer);
+    width: 100%;
+    height: 100%;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+a img{
+  margin: 20px;
+  margin-top: 60px;
+}
+
+#parrafo{
+    color: #131;
+    display: inline-block;
+    line-height: 40px;
+    padding-bottom: 40px;
+    padding-left: 14px;
+}
+
